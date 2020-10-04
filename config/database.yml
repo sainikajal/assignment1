@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  password: postgres
+
+test:
+  <<: *default
+  database: assignments_test
+
+development:
+  <<: *default
+  database: assignments_development
